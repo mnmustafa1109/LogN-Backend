@@ -7,11 +7,14 @@ import Users from './collections/Users';
 import Media from './collections/Media';
 
 export default buildConfig({
-  serverURL: 'https://logn-backend.fly.dev/',
+  serverURL: 'https://logn-backend.fly.dev',
   admin: {
     user: Users.slug,
   },
   collections: [Categories, Posts, Tags, Users, Media],
+  plugins: [
+
+  ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
