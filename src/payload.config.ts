@@ -7,7 +7,7 @@ import Users from './collections/Users';
 import Media from './collections/Media';
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: 'https://logn-backend.fly.dev/',
   admin: {
     user: Users.slug,
   },
